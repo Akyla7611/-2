@@ -1,0 +1,18 @@
+public class Avtoservice {
+    private String location;
+    private int operatorsCount;
+    
+    public Avtoservice(String location){
+        this.location = location;
+       
+    }
+    
+    public void modify(Car legk){
+        String mar=legk.marka;
+        String mark=mar.replace('a','o');
+        String markareplaced=mark.replace('i','e');
+        markareplaced=markareplaced.toUpperCase();
+        System.out.println(markareplaced);
+     
+    }
+}
