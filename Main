@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Domashka2 {
+
+    public static void main(String[] args) {
+        System.out.println("Домашняя работа 2");
+        //Car mashina = new Legkovushka();
+        Car legk = new Legkovushka("Седан","Красная");
+        /*
+        Scanner in = new Scanner(System.in);
+        System.out.print("Введите вес авто ");
+        int VesAvto = in.nextInt();
+        */
+        legk.beek();
+        legk.zavoditMotor();
+        legk.start();
+        legk.getMark();
+        legk.carinfo();
+        
+        Avtoservice razvaluxa = new Avtoservice("Мордор, справа от цитадели Гундабад");
+        razvaluxa.modify(legk);
+        
+    }
+}
