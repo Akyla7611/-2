@@ -1,0 +1,39 @@
+
+public abstract class Car {
+    public String marka;
+   
+    int VesAvto=2;
+    int kolichestvoKoles=6;
+    int Toplivo=80;
+    Scanner in = new Scanner(System.in);
+    
+    
+    private String title;
+    public Car(String title){
+        this.title=title;
+    }
+    public String getTitle(){
+        return title;
+    }
+    public void setTitle(String title){
+        this.title=title;
+    }
+    public void getMark(){
+        Scanner in = new Scanner(System.in);
+        System.out.print("Введите марку авто ");
+        String marg = in.nextLine();
+        //System.out.println(marg);
+        (marka) = marg;
+    }
+    
+    public void beek(){
+        System.out.println("-Бибикает");
+    }
+    public void zavoditMotor(){
+        System.out.println("Заводит мотор...");
+    }
+    public void start(){
+        System.out.println("Стартует вперед!");
+    }
+    public abstract void carinfo();
+}
