@@ -1,0 +1,50 @@
+import java.util.Scanner;
+public class Legkovushka extends  Car {
+    //public String marka;
+    
+    int VesAvto;
+    int kolichestvoKoles;
+    int Toplivo;
+    
+    private String type;
+    public Legkovushka(String type, String title){
+        super(title);
+        this.type = type;
+        //this.type = type; 
+    }
+    
+    @Override
+    public void beek(){
+        System.out.println("Легковушка"+" бибикает");
+    }
+    @Override
+    public void zavoditMotor(){
+        System.out.println("Легковушка"+" Заводит мотор...");
+    }
+    @Override
+    public void start(){
+        System.out.println("Легковушка"+" Стартует!");
+    }
+    @Override
+    public void carinfo(){
+        /*Scanner in = new Scanner(System.in);
+        
+        System.out.print("Введите марку авто ");
+        String marg = in.nextLine();*/
+        
+        System.out.print("Введите вес авто ");
+        int VesAvto = in.nextInt();
+        
+        System.out.print("Введите количество колёс ");
+        int kolichestvoKoles = in.nextInt();
+        
+        System.out.print("Введите используемое топливо ");
+        int Toplivo = in.nextInt();
+        
+        //(marka) = marg;
+        //Выводим введённые значения
+        
+        System.out.println("Марка: "+marka+", Вес автомобиля "+VesAvto+" тонн, колёс: "
+                +kolichestvoKoles+" шт. Использует топливо: "+Toplivo);
+    }
+}
